@@ -7,8 +7,6 @@ pkgs.python3Packages.buildPythonApplication rec{
         flask
     ];
     installPhase=''
-    mkdir -p $out/bin
-    cp app.py $out/bin/my-flask-api
-    chmod +x $out/bin/my-flask-api
-    '';
+    
+
 }

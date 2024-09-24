@@ -6,9 +6,5 @@ pkgs.python3Packages.buildPythonApplication rec{
     propagatedBuildInputs=with pkgs.python3Packages:[
         flask
     ];
-    installPhase=''
-    mkdir -p $out/bin
-    cp app.py $out/bin/my-flask-api
-    chmod +x $out/bin/my-flask-api
-    '';
+    
 }
